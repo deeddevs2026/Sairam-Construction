@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sairam Promoters — Premium Housing &amp; Residential Properties</title>
+  <meta name="description" content="Sairam Promoters — Chennai's leading residential developer crafting luxury villas, premium apartments and gated townships since 2006." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ── LOADER ── -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">SAIRAM</div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-num" id="loaderNum">0%</div>
+    </div>
+  </div>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">S</span><span class="logo-text">AIRAM</span>
+        <span class="logo-sub">PROMOTERS</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#honesty"  class="nav-link">Studio</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta" id="navCta">Book a Visit</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#about"    class="mobile-nav-link">About</a>
+      <a href="#honesty"  class="mobile-nav-link">Studio</a>
+      <a href="#contact"  class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="images/hero_building.png" alt="Premium residential towers" class="hero-img" id="heroImg" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="particles" id="particles"></div>
+
+      <div class="hero-content">
+        <div class="hero-tag">RESIDENTIAL · VILLAS · TOWNSHIPS</div>
+        <h1 class="hero-title">
+          <span class="hero-word" data-delay="0">YOUR</span>
+          <span class="hero-word accent-word" data-delay="150">DREAM</span>
+          <span class="hero-word" data-delay="300">HOME.</span>
+        </h1>
+        <p class="hero-sub">
+          Chennai's most trusted housing developer — crafting premium villas,<br />
+          luxury apartments &amp; gated communities since 2006.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Properties</a>
+          <a href="#about"    class="btn btn-ghost">Our Story  →</a>
+        </div>
+        <div class="hero-scroll-cue" id="scrollCue">
+          <div class="scroll-line"></div>
+          <span>SCROLL</span>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="3500">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Families</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="18">0</span><span class="stat-suffix">yrs</span>
+          <span class="stat-label">Of Trust</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="42">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ PROJECTS ══════════════ -->
+    <section class="chronicles" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow reveal-fade">ALL PROPERTIES ↗</div>
+          <h2 class="chronicles-title">
+            <span class="reveal-text">OUR FINEST</span>
+            <span class="reveal-text delay-1">RESIDENCES</span>
+          </h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 — Wide -->
+          <div class="project-card project-wide reveal-up" data-delay="0">
+            <div class="project-img-wrap">
+              <img src="images/project_villa.png" alt="Sairam Serene Villas" class="project-img" />
+              <div class="project-hover-overlay">
+                <span class="project-hover-cta">View Property ↗</span>
+              </div>
+              <div class="project-badge">READY TO MOVE</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">LUXURY VILLA</span>
+                <span class="project-year">Porur, Chennai</span>
+              </div>
+              <h3 class="project-name">SAIRAM SERENE VILLAS</h3>
+              <p class="project-desc">Exclusive independent villas with private pools, spacious gardens and premium finishes in a tranquil gated enclave — offering 3 &amp; 4 BHK configurations from 2,800 sq ft.</p>
+              <div class="project-highlights">
+                <span>🏊 Private Pool</span>
+                <span>🌳 2,200 sq ft Garden</span>
+                <span>🚗 3-Car Garage</span>
+              </div>
+              <a href="#contact" class="project-link">Enquire Now →</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card reveal-up" data-delay="200">
+            <div class="project-img-wrap">
+              <img src="images/project_apartments.png" alt="Sairam Elara Heights" class="project-img" />
+              <div class="project-hover-overlay">
+                <span class="project-hover-cta">View Property ↗</span>
+              </div>
+              <div class="project-badge selling">95% SOLD</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">APARTMENTS</span>
+                <span class="project-year">Tambaram, Chennai</span>
+              </div>
+              <h3 class="project-name">ELARA HEIGHTS</h3>
+              <p class="project-desc">272 premium 2 &amp; 3 BHK residences with rooftop infinity pool, co-working lounge and 24×7 concierge service.</p>
+              <div class="project-highlights">
+                <span>🏢 G+18 Floors</span>
+                <span>🏊 Rooftop Pool</span>
+              </div>
+              <a href="#contact" class="project-link">Enquire Now →</a>
+            </div>
+          </div>
+
+          <!-- Project 3 — Teaser -->
+          <div class="project-card project-teaser reveal-up" data-delay="350">
+            <div class="project-teaser-bg"></div>
+            <div class="project-teaser-content">
+              <span class="teaser-label">LAUNCHING SOON</span>
+              <h3 class="teaser-name">GREENFIELD TOWNSHIP</h3>
+              <p>120-acre integrated gated community — Sriperumbudur, Chennai</p>
+              <div class="teaser-price">Starting ₹45 Lakhs</div>
+              <a href="#contact" class="btn btn-ghost-sm">Register Interest →</a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card reveal-up" data-delay="450">
+            <div class="project-img-wrap">
+              <img src="images/project_township.png" alt="Sairam Greenfield Township" class="project-img" />
+              <div class="project-hover-overlay">
+                <span class="project-hover-cta">View Property ↗</span>
+              </div>
+              <div class="project-badge">NEW LAUNCH</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">TOWNSHIP</span>
+                <span class="project-year">Sriperumbudur</span>
+              </div>
+              <h3 class="project-name">SAIRAM MEADOWS</h3>
+              <p class="project-desc">A 65-acre plotted development with 480 premium villa plots, clubhouse, sports courts and landscaped parks.</p>
+              <div class="project-highlights">
+                <span>📐 1200–3600 sq ft</span>
+                <span>🏌️ 9-Hole Golf Range</span>
+              </div>
+              <a href="#contact" class="project-link">Enquire Now →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Property Type Filter Strip -->
+        <div class="filter-strip reveal-fade" style="--d:0.3s">
+          <span class="filter-label">Filter by:</span>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="villa">Villas</button>
+          <button class="filter-btn" data-filter="apartment">Apartments</button>
+          <button class="filter-btn" data-filter="township">Townships &amp; Plots</button>
+          <a href="#contact" class="filter-cta">View All 42 Properties →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ SERVICES ══════════════ -->
+    <section class="beyond" id="services">
+      <div class="beyond-bg-grid"></div>
+      <div class="container">
+        <div class="beyond-inner">
+          <div class="beyond-left">
+            <div class="section-eyebrow reveal-fade" style="color:#C9A84C">WHAT WE OFFER ↗</div>
+            <h2 class="beyond-title reveal-text">BEYOND<br/>THE<br/>ORDINARY</h2>
+            <p class="beyond-sub reveal-fade" style="--d:0.4s">
+              Every Sairam home is crafted with superior materials, thoughtful design and a commitment to your family's comfort and security — long after you move in.
+            </p>
+            <a href="#contact" class="btn btn-primary reveal-fade" style="--d:0.6s;margin-top:32px;display:inline-flex">Schedule Site Visit</a>
+          </div>
+          <div class="beyond-right">
+
+            <div class="service-card reveal-up" data-delay="0">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/>
+                </svg>
+              </div>
+              <div class="service-body">
+                <h4>LUXURY VILLAS</h4>
+                <p>Independent &amp; semi-detached 3–5 BHK villas with private gardens, pools and premium Italian marble finishes.</p>
+              </div>
+            </div>
+
+            <div class="service-card reveal-up" data-delay="100">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="3" width="20" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="16" y2="21"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="2" y1="15" x2="22" y2="15"/>
+                </svg>
+              </div>
+              <div class="service-body">
+                <h4>PREMIUM APARTMENTS</h4>
+                <p>2 &amp; 3 BHK high-rise residences with rooftop amenities, smart home tech and integrated security systems.</p>
+              </div>
+            </div>
+
+            <div class="service-card reveal-up" data-delay="200">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+                </svg>
+              </div>
+              <div class="service-body">
+                <h4>GATED TOWNSHIPS</h4>
+                <p>Integrated gated communities with schools, retail, parks and sports facilities — complete lifestyle destinations.</p>
+              </div>
+            </div>
+
+            <div class="service-card reveal-up" data-delay="300">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </div>
+              <div class="service-body">
+                <h4>INTERIOR DESIGN</h4>
+                <p>Full turnkey interior solutions — from modular kitchens to bespoke wardrobes — so your home is move-in ready.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ AMENITIES BAND ══════════════ -->
+    <section class="amenities-band">
+      <div class="container">
+        <div class="section-eyebrow reveal-fade" style="text-align:center;margin-bottom:40px">EVERY SAIRAM HOME INCLUDES</div>
+        <div class="amenities-grid">
+          <div class="amenity reveal-up" data-delay="0">
+            <div class="amenity-icon">🏊</div>
+            <span>Swimming Pool</span>
+          </div>
+          <div class="amenity reveal-up" data-delay="80">
+            <div class="amenity-icon">🏋️</div>
+            <span>Gymnasium</span>
+          </div>
+          <div class="amenity reveal-up" data-delay="160">
+            <div class="amenity-icon">🌿</div>
+            <span>Landscaped Gardens</span>
+          </div>
+          <div class="amenity reveal-up" data-delay="240">
+            <div class="amenity-icon">🔒</div>
+            <span>24×7 Security</span>
+          </div>
+          <div class="amenity reveal-up" data-delay="320">
+            <div class="amenity-icon">🎮</div>
+            <span>Kids' Play Zone</span>
+          </div>
+          <div class="amenity reveal-up" data-delay="400">
+            <div class="amenity-icon">🚗</div>
+            <span>Covered Parking</span>
+          </div>
+          <div class="amenity reveal-up" data-delay="480">
+            <div class="amenity-icon">⚡</div>
+            <span>Solar Power Backup</span>
+          </div>
+          <div class="amenity reveal-up" data-delay="560">
+            <div class="amenity-icon">🏃</div>
+            <span>Jogging Track</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ STRUCTURAL HONESTY ══════════════ -->
+    <section class="honesty" id="honesty">
+      <div class="container">
+        <div class="honesty-inner">
+          <div class="honesty-left reveal-up" data-delay="0">
+            <div class="architect-frame">
+              <img src="images/architect_portrait.png" alt="Our lead architect" class="architect-img" />
+              <div class="architect-badge">
+                <span class="badge-num" data-target="18">0</span><span>+</span>
+                <span class="badge-label">Years of<br/>Excellence</span>
+              </div>
+              <div class="architect-line-1"></div>
+              <div class="architect-line-2"></div>
+            </div>
+          </div>
+
+          <div class="honesty-right">
+            <div class="section-eyebrow reveal-fade">WHY SAIRAM ↗</div>
+            <h2 class="honesty-title reveal-text">BUILT WITH<br/>INTEGRITY.</h2>
+            <p class="honesty-sub reveal-fade" style="--d:0.3s">
+              We believe a home is the most important investment of your life. That's why every Sairam property is built with the highest quality materials, transparent pricing and on-time delivery — backed by 18 years of trust.
+            </p>
+            <div class="honesty-features">
+              <div class="feature-row reveal-up" data-delay="0">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                  <strong>RERA Approved Projects</strong>
+                  <span>All our properties are fully RERA registered and legally clear for worry-free purchase.</span>
+                </div>
+              </div>
+              <div class="feature-row reveal-up" data-delay="120">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                  <strong>On-Time Delivery Guarantee</strong>
+                  <span>We have delivered 100% of our projects on or ahead of schedule — no delays, no surprises.</span>
+                </div>
+              </div>
+              <div class="feature-row reveal-up" data-delay="240">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                  <strong>10-Year Structural Warranty</strong>
+                  <span>Every home comes with a decade-long warranty on structure and waterproofing.</span>
+                </div>
+              </div>
+              <div class="feature-row reveal-up" data-delay="360">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                  <strong>Home Loan Assistance</strong>
+                  <span>Tie-ups with 12+ leading banks — we handle paperwork so you focus on your new life.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ NUMBERS BAND ══════════════ -->
+    <section class="numbers" id="about">
+      <div class="numbers-bg"></div>
+      <div class="container">
+        <div class="numbers-grid">
+          <div class="number-block reveal-up" data-delay="0">
+            <div class="number-val"><span class="count-num" data-target="3500">0</span>+</div>
+            <div class="number-label">Happy Families</div>
+          </div>
+          <div class="number-block reveal-up" data-delay="100">
+            <div class="number-val"><span class="count-num" data-target="42">0</span></div>
+            <div class="number-label">Projects Delivered</div>
+          </div>
+          <div class="number-block reveal-up" data-delay="200">
+            <div class="number-val">₹<span class="count-num" data-target="2800">0</span>Cr+</div>
+            <div class="number-label">Properties Handed Over</div>
+          </div>
+          <div class="number-block reveal-up" data-delay="300">
+            <div class="number-val"><span class="count-num" data-target="8">0</span></div>
+            <div class="number-label">Cities &amp; Locations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ TESTIMONIALS ══════════════ -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-eyebrow reveal-fade" style="text-align:center">FAMILY VOICES</div>
+        <h2 class="section-title-center reveal-text">WHAT OUR<br/>HOMEOWNERS SAY</h2>
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>We purchased a villa at Sairam Serene Villas and moved in 3 months before the promised date. The construction quality and finish exceeded every expectation. Truly, a home we are proud of every single day.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RV</div>
+              <div>
+                <strong>Ramesh &amp; Vijaya Kumar</strong>
+                <span>Residents — Sairam Serene Villas, Porur</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>Buying our first flat was nerve-wracking but Sairam's team guided us through every step — from paperwork to home loan to interior choices. The entire process was completely transparent. Couldn't be happier.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PM</div>
+              <div>
+                <strong>Priya &amp; Muthu Selvam</strong>
+                <span>Residents — Elara Heights, Tambaram</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>I've invested in two Sairam projects and both have delivered exceptional returns. The brand is associated with trust, quality and on-time delivery — rare in Chennai's real estate market.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AS</div>
+              <div>
+                <strong>Arjun Subramaniam</strong>
+                <span>Investment Buyer — Sairam Meadows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <button class="dot active" data-idx="0"></button>
+          <button class="dot" data-idx="1"></button>
+          <button class="dot" data-idx="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CTA / CONTACT ══════════════ -->
+    <section class="cta-band" id="contact">
+      <div class="cta-bg-anim"></div>
+      <div class="cta-inner container">
+        <div class="cta-left">
+          <div class="section-eyebrow" style="color:#C9A84C">LET'S FIND YOUR HOME</div>
+          <h2 class="cta-title reveal-text">FIND YOUR<br/>DREAM<br/>HOME</h2>
+          <p class="cta-sub reveal-fade" style="--d:0.4s">
+            Book a free site visit. Our home advisors will walk you through every property and help you make the perfect choice for your family.
+          </p>
+          <div class="cta-contact-info reveal-fade" style="--d:0.6s">
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Call Us</strong>
+                <span>+91 44 2211 2233</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Visit Experience Centre</strong>
+                <span>Anna Nagar, Chennai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-right reveal-up" data-delay="200">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label for="fphone">Phone</label>
+                <input type="tel" id="fphone" placeholder="+91 98765 43210" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="you@example.com" />
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fproperty">Interested In</label>
+                <select id="fproperty">
+                  <option value="">Select property type…</option>
+                  <option>Luxury Villa (3–5 BHK)</option>
+                  <option>Premium Apartment (2 BHK)</option>
+                  <option>Premium Apartment (3 BHK)</option>
+                  <option>Gated Township / Plot</option>
+                  <option>Commercial Space</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="fbudget">Budget Range</label>
+                <select id="fbudget">
+                  <option value="">Select budget…</option>
+                  <option>₹40L – ₹75L</option>
+                  <option>₹75L – ₹1.25Cr</option>
+                  <option>₹1.25Cr – ₹2Cr</option>
+                  <option>₹2Cr – ₹4Cr</option>
+                  <option>₹4Cr+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="fmsg">Message (Optional)</label>
+              <textarea id="fmsg" rows="3" placeholder="Any specific requirements or questions…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" id="formSubmit">
+              <span class="btn-text">Book Free Site Visit</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>Thank You!</h3>
+            <p>Our home advisor will call you within 2 hours to schedule your visit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <div class="footer-logo">SAIRAM<span class="footer-logo-accent">.</span></div>
+        <p>Chennai's most trusted housing developer — building dream homes and happy families since 2006.</p>
+        <div class="footer-certifications">
+          <span class="cert-badge">RERA Approved</span>
+          <span class="cert-badge">ISO 9001</span>
+          <span class="cert-badge">CREDAI Member</span>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.96-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h5>PROPERTIES</h5>
+        <a href="#">Sairam Serene Villas</a>
+        <a href="#">Elara Heights</a>
+        <a href="#">Sairam Meadows</a>
+        <a href="#">Greenfield Township</a>
+        <a href="#">View All →</a>
+      </div>
+      <div class="footer-links-group">
+        <h5>HOME TYPES</h5>
+        <a href="#">Luxury Villas</a>
+        <a href="#">2 BHK Apartments</a>
+        <a href="#">3 BHK Apartments</a>
+        <a href="#">Township Plots</a>
+        <a href="#">Ready to Move</a>
+      </div>
+      <div class="footer-links-group">
+        <h5>QUICK LINKS</h5>
+        <a href="mailto:homes@sairampromoters.com">homes@sairampromoters.com</a>
+        <a href="tel:+914422112233">+91 44 2211 2233</a>
+        <a href="#">Anna Nagar, Chennai</a>
+        <a href="#">Home Loan Support</a>
+        <a href="#">Download Brochure</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 Sairam Promoters Pvt. Ltd. All rights reserved. RERA No: TN/01/Building/0123/2024</span>
+      <span>Privacy Policy · Terms</span>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
