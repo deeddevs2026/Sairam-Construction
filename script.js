@@ -280,19 +280,41 @@ function startCounters(selector, ctx = document) {
 (function initForm() {
   const form    = $('#contactForm');
   const success = $('#formSuccess');
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwW0m4IwoKLoCp-KIcN-_4Th0pow-swBNXpzISlPlNrKZ5PFV7i8NpPXgjKnp5383g/exec';
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = $('#formSubmit');
-    btn.disabled = true;
-    btn.querySelector('.btn-text').textContent = 'Sending…';
+    const btnText = btn.querySelector('.btn-text');
+    const originalText = btnText.textContent;
 
-    // Simulate async send
-    setTimeout(() => {
+    btn.disabled = true;
+    btnText.textContent = 'Sending…';
+
+    const payload = {
+      name: $('#fname')?.value.trim() || '',
+      phone: $('#fphone')?.value.trim() || '',
+      email: $('#femail')?.value.trim() || '',
+      interestedIn: $('#fproperty')?.value || '',
+      projectStage: $('#fbudget')?.value || '',
+      message: $('#fmsg')?.value.trim() || '',
+    };
+
+    try {
+      await fetch(scriptUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload),
+      });
       form.style.display = 'none';
       success.classList.add('show');
-    }, 1200);
+    } catch (err) {
+      btn.disabled = false;
+      btnText.textContent = originalText;
+      alert('Sorry, the enquiry could not be sent. Please try again.');
+    }
   });
 })();
 
