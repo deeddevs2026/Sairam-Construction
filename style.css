@@ -41,7 +41,7 @@ body {
   background: var(--navy);
   color: var(--white);
   overflow-x: hidden;
-  cursor: none;
+  cursor: auto;
 }
 
 body.loading {
@@ -63,49 +63,13 @@ a {
 button {
   border: none;
   background: none;
-  cursor: none;
+  cursor: pointer;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
-}
-
-/* ── Custom Cursor ── */
-.cursor {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: var(--gold);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s, background 0.2s;
-  mix-blend-mode: difference;
-}
-
-.cursor-follower {
-  position: fixed;
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid rgba(201, 168, 76, 0.5);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.35s var(--ease-out), width 0.3s, height 0.3s, border-color 0.3s;
-}
-
-.cursor.hover {
-  transform: translate(-50%, -50%) scale(0);
-}
-
-.cursor-follower.hover {
-  width: 60px;
-  height: 60px;
-  border-color: var(--gold);
 }
 
 /* ── Loader ── */
@@ -2210,11 +2174,6 @@ button {
 
   .honesty-right {
     padding-left: 0;
-  }
-
-  .cursor,
-  .cursor-follower {
-    display: none;
   }
 
   body {

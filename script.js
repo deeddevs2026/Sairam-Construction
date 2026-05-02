@@ -43,41 +43,6 @@ const clamp = (v, lo, hi) => Math.min(Math.max(v, lo), hi);
   }, 45);
 })();
 
-/* ─── Custom Cursor ───────────────────────────── */
-(function initCursor() {
-  const cursor   = $('#cursor');
-  const follower = $('#cursorFollower');
-  if (!cursor || window.innerWidth < 768) return;
-
-  let mx = 0, my = 0, fx = 0, fy = 0;
-
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    cursor.style.left = mx + 'px';
-    cursor.style.top  = my + 'px';
-  });
-
-  (function animFollower() {
-    fx = lerp(fx, mx, 0.12);
-    fy = lerp(fy, my, 0.12);
-    follower.style.left = fx + 'px';
-    follower.style.top  = fy + 'px';
-    requestAnimationFrame(animFollower);
-  })();
-
-  const hoverEls = $$('a, button, .project-card, .service-card, .btn');
-  hoverEls.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.classList.add('hover');
-      follower.classList.add('hover');
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.classList.remove('hover');
-      follower.classList.remove('hover');
-    });
-  });
-})();
-
 /* ─── Navbar ──────────────────────────────────── */
 (function initNavbar() {
   const navbar = $('#navbar');
